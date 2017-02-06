@@ -1,0 +1,17 @@
+{
+"manifest_version": 3,
+    "name": "CoopWords",
+    "description": "Cooper Buzzwords made more fun",
+    "version": "2.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
