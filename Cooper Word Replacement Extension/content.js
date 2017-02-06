@@ -3,7 +3,7 @@ var elements = document.getElementsByTagName('*');
 var replacements = {};
 replacements["oo"] = "∞";
 replacements["Luke Farrell"] = " trash ";
-replacements["Eric"] = "Barack";
+replacements["Eric Ramoutar"] = "Barack Ramoutar";
 replacements["Lardaro"] = "the Snake";
 
 /*
