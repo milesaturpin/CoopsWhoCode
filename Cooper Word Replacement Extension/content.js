@@ -5,6 +5,10 @@ replacements["oo"] = "∞";
 replacements["Luke Farrell"] = " trash ";
 replacements["Eric Ramoutar"] = "Barack Ramoutar";
 replacements["Lardaro"] = "the Snake";
+replacements["absolutely"] = "aaaaaaaaabbbbsssolutely";
+replacements["About"] = " Lemme tell ya about ";
+replacements["Mirecourt"] = "";
+replacements["strong"] = "big boy";
 
 /*
 ADD YOUR OWN
