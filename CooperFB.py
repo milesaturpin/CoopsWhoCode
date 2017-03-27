@@ -2,7 +2,7 @@ import fbchat as fbchat
 import time
 
 
-client = fbchat.Client("lukefarrell21@yahoo.com","imakoolkat21")
+client = fbchat.Client(username, ****** )
 cooperMembers = ["Jake Shulman"]
 
 def checkMessages():
