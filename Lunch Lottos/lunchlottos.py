@@ -25,7 +25,6 @@ def checkOff(group):
 	f = open('past_partners.txt','a')
 	group = group.split(',')
 	group = [person.strip() for person in group]
-	print group
 	for i in range(len(group) - 1):
 		f.write(group[i] + ",")
 	f.write(group[-1] + "\n")
@@ -44,7 +43,6 @@ if os.path.isfile('names.txt') and os.access('names.txt', os.R_OK):
 				names.remove(trio[1])
 				names.remove(trio[2])
 				s = str(trio[0] + ",", trio[1] + ", " + trio[2])
-				print s
 				if official_run: checkOff(s)
 				break
 		pair = random.sample(names, 2)
@@ -52,7 +50,6 @@ if os.path.isfile('names.txt') and os.access('names.txt', os.R_OK):
 			names.remove(pair[0])
 			names.remove(pair[1])
 			s = str(pair[0] + ", " + pair[1])
-			print s
 			if official_run: checkOff(s)
 else:
 	Exception("Here's the thing: File doesn't exist. Make a file names.txt and add all the names of people in lunch lottos, formatted one name per line.")
