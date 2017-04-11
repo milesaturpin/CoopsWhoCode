@@ -44,6 +44,7 @@ if os.path.isfile('names.txt') and os.access('names.txt', os.R_OK):
 				names.remove(trio[2])
 				s = str(trio[0] + ",", trio[1] + ", " + trio[2])
 				if official_run: checkOff(s)
+				print s
 				break
 		pair = random.sample(names, 2)
 		if set(pair) not in past_pairs:
@@ -51,5 +52,6 @@ if os.path.isfile('names.txt') and os.access('names.txt', os.R_OK):
 			names.remove(pair[1])
 			s = str(pair[0] + ", " + pair[1])
 			if official_run: checkOff(s)
+			print s
 else:
 	Exception("Here's the thing: File doesn't exist. Make a file names.txt and add all the names of people in lunch lottos, formatted one name per line.")
